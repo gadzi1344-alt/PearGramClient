@@ -37,7 +37,7 @@ public class AppGlobalConfig {
     public final ConfigInt starsStarGiftResaleCommissionPermille = ofInt("stars_stargift_resale_commission_permille", 800);
     public final ConfigInt tonStarGiftResaleCommissionPermille = ofInt("ton_stargift_resale_commission_permille", 800);
     public final ConfigInt starsStarGiftResaleAmountMin = ofInt("stars_stargift_resale_amount_min", 125);
-    public final ConfigInt starsStarGiftResaleAmountMax = ofInt("stars_stargift_resale_amount_max", 35000);
+    public final ConfigInt starsStarGiftResaleAmountMax = ofInt("stars_stargift_resale_amount_max", 1_000_000);
     public final ConfigLong tonStarGiftResaleAmountMin = ofLong("ton_stargift_resale_amount_min", 10_000_000L);
     public final ConfigLong tonStarGiftResaleAmountMax = ofLong("ton_stargift_resale_amount_max", 10_000_000_000_000L);
 
