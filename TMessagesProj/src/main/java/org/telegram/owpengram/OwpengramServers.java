@@ -60,7 +60,7 @@ public class OwpengramServers {
         customServersChangedListeners.remove(listener);
     }
 
-    private static final String DEFAULT_HOST = "152.89.254.50";
+    private static final String DEFAULT_HOST = "166.1.144.145";
     private static final int    DEFAULT_PORT = 2398;
 
     // OwpenGram's own production server RSA key.
