@@ -47,6 +47,20 @@ jobs:
             "ndk;27.2.12479018" \
             "cmake;3.22.1"
 
+      - name: Create temporary CI signing key
+        run: |
+          mkdir -p TMessagesProj/config
+          keytool -genkeypair -v \
+            -keystore TMessagesProj/config/release.keystore \
+            -storetype JKS \
+            -storepass android \
+            -keypass android \
+            -alias androidkey \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -dname "CN=PearGram CI, OU=Build, O=PearGram, L=Unknown, ST=Unknown, C=US"
+
       - name: Build APK
         run: |
           chmod +x gradlew
